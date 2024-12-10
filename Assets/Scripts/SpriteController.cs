@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,20 +14,20 @@ public class SpriteController : MonoBehaviour
         //accion
         Sprite Load(string imageName, string spriteName)
         {
-            Sprite[] all = Resources.LoadAll<Sprite>(imageName);
-            foreach (var s in all)
+            Sprite[] all = Resources.LoadAll<Sprite>(imageName); //tenemos la mama con las dos imagenes 
+            foreach (var s in all) // se pone en plan creizi a buscarlas
             {
-                if (s.name == spriteName)
+                if (s.name == spriteName)// si la s.imagen es igual a sprite
                 {
-                    return s;
+                    return s; //nos devuelve el sprite 
                 }
-            }
-            return null;
+            } 
+            return null; // se deja de poner creizi y se para
         }
         // a quien se le hace la accion
 
-        playSprite = Load("Sprite-principal", "Nuevo-Play"); //sprite de play
-        pauseSprite = Load("Sprite-principal", "Nuevo-Pausa"); // sprite de pausa
+        playSprite = Load("play-pause", "Play"); //sprite de play
+        pauseSprite = Load("play-pause", "Pausa"); // sprite de pausa
 
 
         //nombre variable = carga (la imagen x, la parte x);
