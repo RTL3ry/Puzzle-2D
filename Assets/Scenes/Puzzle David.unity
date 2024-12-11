@@ -1113,7 +1113,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 267609743}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 676549430}
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &267609743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,7 +1177,7 @@ GameObject:
   - component: {fileID: 294238324}
   - component: {fileID: 294238323}
   m_Layer: 5
-  m_Name: menu
+  m_Name: exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1235,7 +1247,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 294238324}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 676549430}
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
+        m_MethodName: GameQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &294238324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,7 +1588,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8597658592260400983, guid: 823b797a17924be408370540f8b87525, type: 2}
-  m_audioClip: {fileID: 8300000, guid: a6b83c9197552f744be57b9f1ed3d0aa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 11504398a6fb7094a8d822ede3d456d2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -12108,7 +12132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: reiniciar
+  m_text: restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
   m_sharedMaterial: {fileID: 4211158046247775215, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
@@ -12832,7 +12856,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 676549431}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: SoundMute
+        m_MethodName: MasterMute
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29481,7 +29505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: menu
+  m_text: Exit Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
   m_sharedMaterial: {fileID: 4211158046247775215, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
@@ -35539,7 +35563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: menu
+  m_text: Exit Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
   m_sharedMaterial: {fileID: 4211158046247775215, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
@@ -36078,7 +36102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1546984256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36592,7 +36616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: reiniciar
+  m_text: Restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
   m_sharedMaterial: {fileID: 4211158046247775215, guid: 639f2bdc55c3ff34985242f451983336, type: 2}
@@ -42009,7 +42033,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 676549431}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: SoundMute
+        m_MethodName: MusicMute
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
