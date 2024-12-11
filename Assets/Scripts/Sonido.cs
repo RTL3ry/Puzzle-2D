@@ -5,20 +5,27 @@ using UnityEngine;
 public class Sonido : MonoBehaviour
 {
 
-    public AudioSource fuente;
-    public AudioClip clip;
-    // Start is called before the first frame update
+    public GameObject sonidoSeleccionar;
+    public GameObject sonidoClick;
+  
     void Start()
     {
-        fuente.clip = clip;
+       
     }
 
-public void Reproducir(){
-    fuente.Play ();
-}
  
     void Update()
     {
         
+    }
+
+    public void BotonSonSelec()
+    {
+        Instantiate(sonidoSeleccionar);
+    }
+
+    public void BotonSonClick()
+    {
+        Instantiate(sonidoClick);
     }
 }

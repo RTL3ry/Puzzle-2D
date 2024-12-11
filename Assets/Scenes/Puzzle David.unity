@@ -1571,7 +1571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6394db534b496d4889f77ea7f8ea46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickAudio: {fileID: 0}
 --- !u!1 &395513645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,7 +1973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6394db534b496d4889f77ea7f8ea46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickAudio: {fileID: 8300000, guid: 190ccb0c09b96814297e4690b3b32de9, type: 3}
 --- !u!82 &465503769
 AudioSource:
   m_ObjectHideFlags: 0
