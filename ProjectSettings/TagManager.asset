@@ -11,8 +11,8 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
-  - 
+  - Blocks
+  - Barreras
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Horizontal
+    uniqueID: 3266175547
+    locked: 0
+  - name: Vertical
+    uniqueID: 615048531
     locked: 0
